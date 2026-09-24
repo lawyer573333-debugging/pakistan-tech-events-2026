@@ -1,0 +1,3003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakistan Tech Events 2026 🇵🇰</title>
+  <meta name="description" content="Discover hackathons, conferences, competitions and technology opportunities across Pakistan." />
+  <meta property="og:title" content="Pakistan Tech Events 2026 🇵🇰" />
+  <meta property="og:description" content="Discover hackathons, conferences, competitions and technology opportunities across Pakistan." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #070d0a;
+      --bg-surface: #0e1713;
+      --bg-surface-elevated: #14221c;
+      --bg-card: #111e18;
+      --bg-card-hover: #162720;
+      --border-subtle: #1c3228;
+      --border-focus: #10b981;
+      --text-main: #f0fdf4;
+      --text-muted: #94a39b;
+      --text-dim: #5c7267;
+      --pk-green: #008744;
+      --pk-green-dark: #004d25;
+      --emerald-accent: #10b981;
+      --emerald-glow: rgba(16, 185, 129, 0.18);
+      --emerald-border: rgba(16, 185, 129, 0.28);
+      --badge-free-bg: rgba(16, 185, 129, 0.15);
+      --badge-free-text: #34d399;
+      --badge-paid-bg: rgba(245, 158, 11, 0.15);
+      --badge-paid-text: #fbbf24;
+      --badge-closed-bg: rgba(239, 68, 68, 0.15);
+      --badge-closed-text: #f87171;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+    }
+
+    body {
+      background-color: var(--bg-base);
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 100% 40%, rgba(0, 77, 37, 0.12) 0%, transparent 40%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-subtle);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--emerald-accent);
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* App Topbar (like in the image) */
+    .app-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(10, 18, 14, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: border-color 0.2s ease;
+      padding: 0.65rem 1.5rem;
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1480px;
+      margin: 0 auto;
+      width: 100%;
+      gap: 1.5rem;
+    }
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .topbar-badge {
+      width: 34px;
+      height: 34px;
+      background: #facc15;
+      color: #070d0a;
+      font-weight: 800;
+      font-size: 1.05rem;
+      font-family: var(--font-mono);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 0 14px rgba(250, 204, 21, 0.35);
+      flex-shrink: 0;
+    }
+    .topbar-title-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .topbar-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .topbar-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+    .pulse-dot {
+      width: 6px;
+      height: 6px;
+      background: #ef4444;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #ef4444;
+      display: inline-block;
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      font-family: inherit;
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 0.48rem 0.85rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.18s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #008744, #10b981);
+      color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 135, 68, 0.35);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #029b4e, #34d399);
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.45);
+      transform: translateY(-1px);
+    }
+    /* Vibrant, coloured and poppy View Details button */
+    .btn-details {
+      background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+      color: #042315;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 3px 14px rgba(16, 185, 129, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-details:hover {
+      background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #6ee7b7 100%);
+      color: #021a0f;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6), 0 0 12px rgba(52, 211, 153, 0.5);
+    }
+    .btn-details:active {
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+    }
+    .btn-secondary {
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+      border-color: var(--border-subtle);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--emerald-border);
+      color: var(--text-main);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--emerald-accent);
+      border-color: var(--emerald-border);
+    }
+    .btn-outline:hover {
+      background: var(--emerald-glow);
+      border-color: var(--emerald-accent);
+    }
+    .btn-sm {
+      padding: 0.36rem 0.72rem;
+      font-size: 0.8rem;
+    }
+    .btn-disabled {
+      opacity: 0.45;
+      cursor: not-allowed !important;
+      pointer-events: none;
+      background: var(--bg-surface) !important;
+      border-color: var(--border-subtle) !important;
+      color: var(--text-dim) !important;
+      box-shadow: none !important;
+    }
+
+    /* App Workspace & Left-Side List (like in image) */
+    .app-workspace {
+      width: 100%;
+      max-width: 1480px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 3.5rem;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      box-sizing: border-box;
+    }
+
+    /* Left Sidebar List Column */
+    .sidebar-list-pane {
+      width: 275px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 75px;
+      max-height: calc(100vh - 90px);
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-heading {
+      font-size: 0.73rem;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      padding: 0 0.35rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar-total-badge {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--emerald-accent);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 1px 7px;
+      border-radius: 9999px;
+    }
+    .sidebar-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.32rem;
+      overflow-y: auto;
+      padding-right: 0.25rem;
+    }
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: var(--bg-surface);
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.16s ease;
+      width: 100%;
+      text-align: left;
+    }
+    .sidebar-item:hover {
+      background: var(--bg-surface-elevated);
+      border-color: rgba(16, 185, 129, 0.25);
+      color: var(--text-main);
+      transform: translateX(2px);
+    }
+    .sidebar-item.active {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: var(--emerald-accent);
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.18);
+      color: #ffffff;
+    }
+    .sidebar-item-left {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      min-width: 0;
+      flex: 1;
+    }
+    .sidebar-item-num {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 0.15rem 0.45rem;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-base);
+      color: var(--text-dim);
+      flex-shrink: 0;
+      transition: all 0.16s ease;
+    }
+    .sidebar-item.active .sidebar-item-num {
+      background: var(--emerald-accent);
+      color: #042315;
+      border-color: var(--emerald-accent);
+      font-weight: 800;
+    }
+    .sidebar-item-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sidebar-item-count {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      flex-shrink: 0;
+    }
+    .sidebar-item.active .sidebar-item-count {
+      color: var(--emerald-accent);
+    }
+
+    .sidebar-extra-nav {
+      margin-top: 1rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .sidebar-subitem {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      width: 100%;
+      text-align: left;
+    }
+    .sidebar-subitem:hover {
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+    }
+
+    /* Right Side Stage Pane */
+    .stage-pane {
+      flex: 1;
+      min-width: 0;
+    }
+    .stage-card {
+      border: 1.5px solid rgba(16, 185, 129, 0.45);
+      border-radius: 20px;
+      background: rgba(14, 23, 19, 0.85);
+      backdrop-filter: blur(14px);
+      padding: 2.25rem;
+      box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px -8px rgba(16, 185, 129, 0.15);
+      position: relative;
+    }
+    .stage-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .stage-counter {
+      font-family: var(--font-mono);
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--emerald-accent);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+    .stage-headline {
+      font-size: clamp(2rem, 3.8vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #ffffff;
+      line-height: 1.1;
+      margin-bottom: 0.65rem;
+    }
+    .stage-description {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      max-width: 720px;
+    }
+    .stage-header-right {
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .stage-count-num {
+      font-family: var(--font-mono);
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+    .stage-count-label {
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      color: var(--text-dim);
+      margin-top: 0.25rem;
+      text-transform: uppercase;
+    }
+
+    /* Stage Toolbar */
+    .stage-toolbar {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .stage-toolbar .search-input-wrapper {
+      flex: 1;
+      min-width: 240px;
+    }
+    .stage-toolbar .filter-select {
+      height: 44px;
+      font-size: 0.85rem;
+    }
+
+    /* Subrow */
+    .stage-subrow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 1.5rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      font-weight: 700;
+      flex-wrap: wrap;
+    }
+    .stage-subrow-left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+    }
+    .stage-subrow-bullet {
+      width: 7px;
+      height: 7px;
+      background: var(--emerald-accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--emerald-accent);
+    }
+    .stage-subrow-right {
+      color: var(--text-dim);
+      font-size: 0.76rem;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
+    /* Stage bottom footer bar */
+    .stage-footer-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.82rem;
+      color: var(--text-dim);
+    }
+    .stage-progress-track {
+      flex: 1;
+      max-width: 320px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      overflow: hidden;
+      position: relative;
+    }
+    .stage-progress-fill {
+      height: 100%;
+      background: var(--emerald-accent);
+      box-shadow: 0 0 10px var(--emerald-accent);
+      border-radius: 9999px;
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .stage-footer-index {
+      font-family: var(--font-mono);
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-dim);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 4rem 0 2.5rem;
+      text-align: center;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid var(--emerald-border);
+      color: var(--emerald-accent);
+      padding: 0.35rem 0.9rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      margin-bottom: 1.25rem;
+    }
+    .hero-badge .pulse-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--emerald-accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--emerald-accent);
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+    .hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.75rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+    .hero-title .gradient-text {
+      background: linear-gradient(135deg, #34d399 20%, #10b981 70%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 2.5rem 0 3rem;
+      padding: 1.25rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+    }
+    .stat-item {
+      text-align: center;
+      padding: 0.5rem;
+      border-right: 1px solid var(--border-subtle);
+    }
+    .stat-item:last-child {
+      border-right: none;
+    }
+    .stat-num {
+      font-size: 2rem;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+    }
+    .stat-num span {
+      color: var(--emerald-accent);
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    /* Controls & Filters */
+    .controls-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.3);
+    }
+    .search-row {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+    .search-input-wrapper {
+      position: relative;
+      flex: 1;
+    }
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      pointer-events: none;
+      display: flex;
+    }
+    .search-input {
+      width: 100%;
+      height: 48px;
+      padding: 0 1rem 0 2.85rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: all 0.15s ease;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--emerald-accent);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+    }
+    .search-clear {
+      position: absolute;
+      right: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      padding: 0.25rem;
+      display: none;
+    }
+    .search-clear:hover {
+      color: var(--text-main);
+    }
+
+    .filters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .filter-label {
+      font-size: 0.73rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+    }
+    .filter-select {
+      height: 38px;
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.84rem;
+      padding: 0 0.65rem;
+      cursor: pointer;
+      transition: border-color 0.15s ease;
+    }
+    .filter-select:focus {
+      outline: none;
+      border-color: var(--emerald-accent);
+    }
+
+    .filter-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .active-filters {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .filter-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--emerald-accent);
+      padding: 0.2rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.76rem;
+      font-family: var(--font-mono);
+    }
+    .filter-chip-remove {
+      cursor: pointer;
+      display: flex;
+      color: var(--text-dim);
+    }
+    .filter-chip-remove:hover {
+      color: #ef4444;
+    }
+    .clear-all-btn {
+      color: var(--text-dim);
+      background: none;
+      border: none;
+      font-size: 0.82rem;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0.2rem 0.4rem;
+    }
+    .clear-all-btn:hover {
+      color: #f87171;
+    }
+
+    /* Event Grid */
+    .events-section {
+      margin-bottom: 4rem;
+    }
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Event Card */
+    .event-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .event-card:hover {
+      border-color: var(--emerald-border);
+      background: var(--bg-card-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--emerald-glow);
+    }
+
+    .card-top-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.85rem;
+    }
+    .card-category-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-sm);
+      background: rgba(16, 185, 129, 0.1);
+      color: #34d399;
+      border: 1px solid var(--emerald-border);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .card-status-badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.22rem 0.55rem;
+      border-radius: 9999px;
+      font-family: var(--font-mono);
+      white-space: nowrap;
+    }
+    .status-upcoming {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .status-ongoing {
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+    .status-completed {
+      background: rgba(107, 114, 128, 0.18);
+      color: #9ca3af;
+      border: 1px solid rgba(107, 114, 128, 0.25);
+    }
+
+    .card-title {
+      font-size: 1.44rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.25;
+      margin: 0.55rem 0 0.65rem;
+      letter-spacing: -0.03em;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+      transition: color 0.18s ease;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .event-card:hover .card-title {
+      color: #34d399;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.55;
+      margin-bottom: 1.15rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      padding: 0.75rem 0.85rem;
+      background: var(--bg-surface);
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      font-size: 0.82rem;
+    }
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      color: var(--text-muted);
+    }
+    .meta-item svg {
+      color: var(--emerald-accent);
+      flex-shrink: 0;
+    }
+    .meta-highlight {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .card-pill-row {
+      display: flex;
+      gap: 0.45rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .pill {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+    }
+    .pill-free {
+      background: var(--badge-free-bg);
+      color: var(--badge-free-text);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+    }
+    .pill-paid {
+      background: var(--badge-paid-bg);
+      color: var(--badge-paid-text);
+      border: 1px solid rgba(251, 191, 36, 0.25);
+    }
+    .pill-tba {
+      background: rgba(148, 163, 184, 0.1);
+      color: #94a3b8;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+    }
+    .pill-reg-open {
+      background: rgba(16, 185, 129, 0.12);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+    .pill-reg-closing {
+      background: rgba(249, 115, 22, 0.12);
+      color: #fb923c;
+      border: 1px solid rgba(249, 115, 22, 0.25);
+    }
+    .pill-reg-closed {
+      background: var(--badge-closed-bg);
+      color: var(--badge-closed-text);
+      border: 1px solid rgba(248, 113, 113, 0.25);
+    }
+
+    .card-actions {
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+
+    /* Empty search state */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem 1.5rem;
+      background: var(--bg-surface);
+      border: 1px dashed var(--border-subtle);
+      border-radius: var(--radius-lg);
+    }
+    .empty-icon {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 1rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.08);
+      color: var(--emerald-accent);
+    }
+    .empty-state h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .empty-state p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Section Headers */
+    .section-header {
+      margin-bottom: 1.75rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .section-title {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-top: 0.25rem;
+    }
+
+    /* Explore by City & Category grids */
+    .explore-section {
+      margin-bottom: 4rem;
+    }
+    .city-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+    .city-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.15rem;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .city-card:hover {
+      background: var(--bg-surface-elevated);
+      border-color: var(--emerald-border);
+      transform: translateY(-2px);
+    }
+    .city-name {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.02rem;
+    }
+    .city-province {
+      font-size: 0.74rem;
+      color: var(--text-dim);
+    }
+    .city-count {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--emerald-accent);
+      background: var(--emerald-glow);
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      border: 1px solid var(--emerald-border);
+      font-weight: 600;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1rem;
+    }
+    .category-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.15rem;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .category-card:hover {
+      background: var(--bg-surface-elevated);
+      border-color: var(--emerald-border);
+      transform: translateY(-2px);
+    }
+    .category-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .category-icon {
+      font-size: 1.3rem;
+    }
+    .category-title {
+      font-weight: 700;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    .category-count {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* Modal System */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease;
+    }
+    .modal-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .modal-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      max-width: 650px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 30px var(--emerald-glow);
+      transform: scale(0.96);
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .modal-backdrop.active .modal-box {
+      transform: scale(1);
+    }
+    .modal-header {
+      padding: 1.5rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      background: var(--bg-surface);
+      z-index: 10;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .modal-close-btn {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+    .modal-close-btn:hover {
+      background: var(--bg-card-hover);
+      color: #fff;
+      border-color: var(--emerald-border);
+    }
+    .modal-body {
+      padding: 1.5rem;
+    }
+    .modal-footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    /* Modal Content Specifics */
+    .modal-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1.25rem 0;
+      padding: 1rem;
+      background: var(--bg-base);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+    .modal-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .modal-meta-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-dim);
+      letter-spacing: 0.05em;
+    }
+    .modal-meta-value {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    /* Form Styles */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+    }
+    .form-label span {
+      color: #ef4444;
+    }
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.88rem;
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--emerald-accent);
+      box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+    .toast {
+      background: var(--bg-surface-elevated);
+      color: #fff;
+      border: 1px solid var(--emerald-border);
+      border-left: 4px solid var(--emerald-accent);
+      padding: 0.85rem 1.25rem;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      font-size: 0.88rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: auto;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 3rem 0 2rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .footer-desc {
+      margin-top: 0.75rem;
+      line-height: 1.6;
+      max-width: 440px;
+      color: var(--text-dim);
+    }
+    .footer-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.85rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .footer-links a:hover {
+      color: var(--emerald-accent);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    /* Mobile Drawer */
+    .mobile-nav {
+      display: none;
+    }
+    .mobile-nav.open {
+      display: block;
+      position: fixed;
+      top: 68px;
+      left: 0;
+      width: 100%;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1.5rem;
+      z-index: 49;
+    }
+    .mobile-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .mobile-nav a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      display: block;
+    }
+
+    /* Mobile Category Dropdown (replaces slider on mobile) */
+    .mobile-category-wrap {
+      display: none;
+      width: 100%;
+      margin-bottom: 0.65rem;
+    }
+    .mobile-category-select {
+      width: 100%;
+      height: 48px;
+      padding: 0 1rem;
+      background: var(--bg-surface-elevated);
+      border: 1.5px solid var(--emerald-accent);
+      border-radius: var(--radius-sm);
+      color: #ffffff;
+      font-size: 0.94rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.2);
+    }
+    .mobile-category-select option {
+      background: #0d1a14;
+      color: #ffffff;
+      padding: 0.5rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      body, html {
+        overflow-x: hidden;
+      }
+      .app-workspace {
+        flex-direction: column;
+        padding: 1rem 1rem 3rem;
+        gap: 1.25rem;
+        overflow-x: hidden;
+        width: 100%;
+      }
+      .sidebar-list-pane {
+        width: 100%;
+        position: static;
+        max-height: none;
+      }
+      /* Remove horizontal scrolling slider on mobile: replace with clean instant category selector */
+      .sidebar-list {
+        display: none !important;
+      }
+      .mobile-category-wrap {
+        display: block;
+      }
+      .sidebar-extra-nav {
+        flex-direction: row;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+      .sidebar-subitem {
+        width: auto;
+      }
+      .stage-card {
+        padding: 1.35rem;
+      }
+      .stage-header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .stage-header-right {
+        text-align: left;
+      }
+      .stage-count-num {
+        font-size: 2.75rem;
+      }
+      /* Remove progress slider track on mobile view */
+      .stage-progress-track {
+        display: none !important;
+      }
+    }
+    @media (max-width: 768px) {
+      body, html {
+        overflow-x: hidden;
+      }
+      .card-title {
+        font-size: 1.32rem;
+      }
+      .topbar-subtitle {
+        display: none;
+      }
+      .topbar-actions .btn span {
+        display: none;
+      }
+      .events-grid {
+        grid-template-columns: 1fr;
+      }
+      .stage-toolbar {
+        flex-direction: column;
+      }
+      .stage-toolbar .filter-select {
+        width: 100%;
+      }
+      .stage-footer-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+      .stage-progress-track {
+        display: none !important;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar (like in the image) -->
+  <header class="app-topbar">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <div class="topbar-badge">26</div>
+        <div class="topbar-title-wrap">
+          <h1 class="topbar-title">Pakistan Tech Events 2026</h1>
+          <div class="topbar-subtitle">
+            <span class="pulse-dot"></span>
+            <span>August to December • Official links</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button id="btnIntro" class="btn btn-secondary btn-sm" title="Show All Events">
+          <span>Intro</span>
+        </button>
+        <button id="btnPrevCategory" class="btn btn-secondary btn-sm" title="Previous Category">
+          <span>← Category</span>
+        </button>
+        <button id="btnNextCategory" class="btn btn-secondary btn-sm" title="Next Category">
+          <span>Category →</span>
+        </button>
+        <button id="btnFullScreen" class="btn btn-details btn-sm" title="Toggle Fullscreen">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+          </svg>
+          <span>Full Screen</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- App Workspace: Left List + Right Stage Frame (like in the image) -->
+  <div class="app-workspace">
+    
+    <!-- Left Column: Categories List -->
+    <aside class="sidebar-list-pane">
+      <div class="sidebar-heading">
+        <span>CATEGORIES</span>
+        <span class="sidebar-total-badge" id="sidebarTotalEventsBadge">18</span>
+      </div>
+      <!-- Mobile Category Dropdown (Clean one-tap selection, no slider) -->
+      <div class="mobile-category-wrap">
+        <select id="mobileCategorySelect" class="mobile-category-select" aria-label="Select Category Track">
+          <!-- Populated dynamically -->
+        </select>
+      </div>
+      <nav class="sidebar-list" id="sidebarNavList">
+        <!-- Rendered dynamically by JavaScript -->
+      </nav>
+
+      <div class="sidebar-extra-nav">
+        <a href="#cities" class="sidebar-subitem" id="sidebarCitiesLink">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Tech Hub Cities</span>
+        </a>
+        <a href="#about" class="sidebar-subitem" id="sidebarAboutLink">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>About Directory</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Right Column: Main Stage Frame -->
+    <main class="stage-pane">
+      <div class="stage-card">
+        
+        <!-- Stage Header -->
+        <div class="stage-header">
+          <div class="stage-header-left">
+            <div class="stage-counter" id="stageCounterText">01 / 10</div>
+            <h2 class="stage-headline" id="stageHeadlineText">All Tech Events</h2>
+            <p class="stage-description" id="stageDescriptionText">
+              Complete verified directory of hackathons, developer conferences, student competitions, and tech opportunities across Pakistan.
+            </p>
+          </div>
+          <div class="stage-header-right">
+            <div class="stage-count-num" id="stageBigCount">18</div>
+            <div class="stage-count-label">EVENTS</div>
+          </div>
+        </div>
+
+        <!-- Stage Search & Filter Toolbar -->
+        <div class="stage-toolbar">
+          <div class="search-input-wrapper">
+            <span class="search-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-input" 
+              placeholder="Search by title, city, topic, university, or keywords..." 
+              autocomplete="off"
+            />
+            <button id="searchClearBtn" class="search-clear" aria-label="Clear search">✕</button>
+          </div>
+
+          <select id="cityFilter" class="filter-select">
+            <option value="all">All Cities</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Multan">Multan</option>
+            <option value="Peshawar">Peshawar</option>
+            <option value="Quetta">Quetta</option>
+            <option value="Topi">Topi (GIK)</option>
+          </select>
+
+          <select id="typeFilter" class="filter-select">
+            <option value="all">All Types</option>
+            <option value="In-Person">In-Person</option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="Virtual">Virtual</option>
+          </select>
+
+          <select id="feeFilter" class="filter-select">
+            <option value="all">All Pricing</option>
+            <option value="Free">Free to Attend</option>
+            <option value="Paid">Paid / Ticketed</option>
+          </select>
+
+          <select id="sortSelect" class="filter-select">
+            <option value="soonest">Soonest Date</option>
+            <option value="latest">Latest Date</option>
+            <option value="alphabetical">A–Z</option>
+          </select>
+        </div>
+
+        <!-- Subrow like in image -->
+        <div class="stage-subrow">
+          <div class="stage-subrow-left">
+            <span class="stage-subrow-bullet"></span>
+            <span>UPCOMING EVENTS • GROUPED BY FORMAT</span>
+          </div>
+          <div class="stage-subrow-right">
+            Click an event for complete details
+          </div>
+        </div>
+
+        <!-- Filter chips if active -->
+        <div class="active-filters" id="activeChipsContainer"></div>
+
+        <!-- Events Grid inside stage -->
+        <div id="eventsGrid" class="events-grid">
+          <!-- Rendered by JavaScript -->
+        </div>
+
+        <!-- Stage Footer Progress Bar (like in image) -->
+        <div class="stage-footer-bar">
+          <div class="stage-footer-left">
+            <span>Built for Pakistan tech ecosystem • Verified links</span>
+          </div>
+          <div class="stage-progress-track">
+            <div class="stage-progress-fill" id="stageProgressBar" style="width: 10%;"></div>
+          </div>
+          <div class="stage-footer-index" id="stageFooterIndex">
+            01 / 10
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore by Tech Hub Cities Section -->
+      <section id="cities" class="explore-section" style="margin-top: 3.5rem;">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Explore by Tech Hub
+            </h2>
+            <p class="section-desc">Click a city to quickly filter tech summits, hackathons, and gatherings in that region.</p>
+          </div>
+        </div>
+        <div id="cityGrid" class="city-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="explore-section" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem; margin-top: 3rem;">
+        <h2 class="section-title" style="margin-bottom: 1rem;">
+          About Pakistan Tech Events 🇵🇰
+        </h2>
+        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+          Pakistan’s technology and developer ecosystem is accelerating with university conventions, startup hubs, national hackathons, and global open-source community days. 
+          This directory is an open community initiative inspired by global tech event aggregators, built purely to help developers, students, researchers, founders, and engineers discover high-impact opportunities across all provinces.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div style="background: var(--bg-base); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); flex: 1; min-width: 200px;">
+            <h4 style="color: #fff; margin-bottom: 0.25rem;">✨ 100% Free & Open</h4>
+            <p style="font-size: 0.82rem; color: var(--text-dim);">No accounts or paywalls. Direct access to organizers and application portals.</p>
+          </div>
+          <div style="background: var(--bg-base); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); flex: 1; min-width: 200px;">
+            <h4 style="color: #fff; margin-bottom: 0.25rem;">🛡️ Verified Information</h4>
+            <p style="font-size: 0.82rem; color: var(--text-dim);">Never invented or assumed. Missing details are transparently marked as TBA.</p>
+          </div>
+          <div style="background: var(--bg-base); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); flex: 1; min-width: 200px;">
+            <h4 style="color: #fff; margin-bottom: 0.25rem;">🤝 Community Directory</h4>
+            <p style="font-size: 0.82rem; color: var(--text-dim);">Connecting students, organizers, and developers across Pakistan.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom: 0.85rem;">
+            <div class="brand-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <span>Pakistan Tech Events</span>
+            <span class="brand-year">2026</span>
+          </div>
+          <p class="footer-desc">
+            An open community directory tracking hackathons, summits, developer conferences, and coding competitions across Pakistan.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#cities">Major Cities</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About Project</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="#events">Explore All Events</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Contribute on GitHub ↗</a></li>
+            <li><a href="#events">Back to Top ↑</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <strong>Disclaimer:</strong> Pakistan Tech Events is a community-maintained index. Dates, venues, eligibility, and fees are subject to change by event organizers. Please check official event links before traveling or booking.
+        </div>
+        <div>
+          Built with 💚 for the Pakistani Developer Community • 2026
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Event Details Modal -->
+  <div id="eventModalBackdrop" class="modal-backdrop">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div id="modalCategory" class="card-category-badge" style="margin-bottom: 0.5rem;">Category</div>
+          <h3 id="modalTitle" class="card-title" style="font-size: 1.85rem; font-weight: 800; line-height: 1.2; margin-bottom: 0;">Event Title</h3>
+        </div>
+        <button id="closeEventModalBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p id="modalDesc" style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem; font-size: 0.95rem;"></p>
+
+        <!-- Meta Grid -->
+        <div class="modal-meta-grid">
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Organizer</span>
+            <span id="modalOrganizer" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Dates & Schedule</span>
+            <span id="modalDates" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Venue & Location</span>
+            <span id="modalVenue" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">City & Province</span>
+            <span id="modalCityProvince" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Registration Deadline</span>
+            <span id="modalDeadline" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Eligibility / Audience</span>
+            <span id="modalEligibility" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Fee / Admission</span>
+            <span id="modalFee" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-meta-label">Prize Pool / Perks</span>
+            <span id="modalPrize" class="modal-meta-value">TBA / Not announced</span>
+          </div>
+        </div>
+
+        <div id="modalStatusBanner" style="padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-family: var(--font-mono); margin-bottom: 1rem;">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="modalShareBtn" class="btn btn-secondary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span>Share Link</span>
+        </button>
+        <button id="modalCalendarBtn" class="btn btn-secondary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Add to Calendar (.ics)</span>
+        </button>
+        <a id="modalOfficialLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span>Official Website</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script>
+    /**
+     * =========================================================================
+     * PAKISTAN TECH EVENTS 2026 - EVENT DATASET
+     * =========================================================================
+     * Easy to maintain and extend: add new events into this array.
+     * Note: Never invent missing data; use "TBA / Not announced" or null.
+     */
+    const events = [
+      {
+        id: "itcn-asia-2026",
+        name: "ITCN Asia 2026",
+        category: "Technology Expo",
+        type: "In-Person",
+        city: "Karachi",
+        province: "Sindh",
+        venue: "Karachi Expo Centre",
+        startDate: "2026-09-22",
+        endDate: "2026-09-24",
+        dateDisplay: "22–24 Sep 2026",
+        month: "09",
+        organizer: "Ecommerce Gateway Pakistan",
+        fee: "Free",
+        feeDetails: "Free visitor pass with advance online registration",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-09-24",
+        eligibility: "Open to tech professionals, students, founders, and enterprises",
+        prizePool: "TBA / Not announced",
+        url: "https://itcnasia.com/",
+        description: "Pakistan's biggest international tech expo and conference showcasing IT, telecom, AI, cybersecurity, e-commerce, and enterprise cloud solutions."
+      },
+      {
+        id: "pasha-ict-awards-2026",
+        name: "P@SHA ICT Awards 2026",
+        category: "Technology Awards",
+        type: "In-Person",
+        city: "Karachi",
+        province: "Sindh",
+        venue: "Marriott Hotel Karachi",
+        startDate: "2026-09-22",
+        endDate: "2026-09-22",
+        dateDisplay: "22 Sep 2026",
+        month: "09",
+        organizer: "Pakistan Software Houses Association (P@SHA)",
+        fee: "Paid",
+        feeDetails: "Ticketed for delegates and gala dinner guests",
+        registrationStatus: "Closed",
+        registrationDeadline: "2026-09-15",
+        eligibility: "Pakistani tech companies, innovators, and nominees",
+        prizePool: "National ICT Trophy & Nominated for APICTA Awards",
+        url: "https://pashaictawards.com/",
+        description: "The premier technology industry celebration honoring groundbreaking software products, startups, digital services, and talent across Pakistan."
+      },
+      {
+        id: "pasha-startup-hub-launch",
+        name: "P@SHA Startup Hub Launch",
+        category: "Startup / Networking",
+        type: "In-Person",
+        city: "Lahore",
+        province: "Punjab",
+        venue: "P@SHA Tech Center Lahore",
+        startDate: "2026-09-24",
+        endDate: "2026-09-24",
+        dateDisplay: "24 Sep 2026",
+        month: "09",
+        organizer: "P@SHA & Ecosystem Partners",
+        fee: "Free",
+        feeDetails: "Free entry via invite / RSVP",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-09-24",
+        eligibility: "Tech founders, mentors, investors, and engineers",
+        prizePool: "Incubation support & ecosystem access",
+        url: "https://pasha.hostinger.bitscollision.net/events/pasha-startup-hub-launch-b3d45124",
+        description: "Inaugural launch of P@SHA's physical innovation and startup hub designed to accelerate early-stage technology founders with mentorship and investor connect."
+      },
+      {
+        id: "hacktoberfest-hackday-cncf",
+        name: "HacktoberFest Hackday × CNCF",
+        category: "Open Source",
+        type: "In-Person",
+        city: "Islamabad",
+        province: "Islamabad Capital Territory",
+        venue: "National Incubation Center (NIC) Islamabad",
+        startDate: "2026-10-03",
+        endDate: "2026-10-03",
+        dateDisplay: "3 Oct 2026",
+        month: "10",
+        organizer: "Cloud Native Islamabad (CNCF Community)",
+        fee: "Free",
+        feeDetails: "Free registration for open-source contributors",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-02",
+        eligibility: "Open to all software developers, students, and open source enthusiasts",
+        prizePool: "Hacktoberfest swag, stickers, and badges",
+        url: null,
+        description: "A collaborative community hackday in celebration of Hacktoberfest and cloud-native computing. Work together on GitHub issues, pull requests, and Kubernetes tooling."
+      },
+      {
+        id: "aicon-2026",
+        name: "AICON'26",
+        category: "AI / Machine Learning",
+        type: "In-Person",
+        city: "Islamabad",
+        province: "Islamabad Capital Territory",
+        venue: "NUST School of Electrical Engineering and Computer Science (SEECS), H-12",
+        startDate: "2026-10-09",
+        endDate: "2026-10-11",
+        dateDisplay: "9–11 Oct 2026",
+        month: "10",
+        organizer: "NUST AI & Computing Society",
+        fee: "Paid",
+        feeDetails: "Team competition fee applies; keynotes free for registered attendees",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-04",
+        eligibility: "University students, researchers, and professional coders nationwide",
+        prizePool: "PKR 500,000+ Prize Pool and trophies",
+        url: "https://www.aicon26.pk/",
+        description: "Flagship national Artificial Intelligence conference, hackathon, and competitive programming fest organized at NUST featuring industry leaders, workshops, and AI sprint tracks."
+      },
+      {
+        id: "nascon-2026",
+        name: "NaSCon'26",
+        category: "Student Convention",
+        type: "In-Person",
+        city: "Islamabad",
+        province: "Islamabad Capital Territory",
+        venue: "FAST-NUCES Islamabad Campus, H-9",
+        startDate: "2026-10-16",
+        endDate: "2026-10-18",
+        dateDisplay: "16–18 Oct 2026",
+        month: "10",
+        organizer: "FAST National University of Computer and Emerging Sciences",
+        fee: "Paid",
+        feeDetails: "Per-module registration fee per university team",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-10",
+        eligibility: "University and college students across Pakistan",
+        prizePool: "Cash prizes, merit certificates, and shields",
+        url: "https://nascon.com.pk/",
+        description: "One of Pakistan's longest-running student tech conventions featuring speed programming, web development sprints, mobile app showdowns, CTF, AI battles, and gaming."
+      },
+      {
+        id: "pakistan-tech-innovation-summit-2026",
+        name: "Pakistan Tech Innovation Summit 2026",
+        category: "Startup / Networking",
+        type: "In-Person",
+        city: "Lahore",
+        province: "Punjab",
+        venue: "Lahore Expo Center / Faletti's",
+        startDate: "2026-10-19",
+        endDate: "2026-10-19",
+        dateDisplay: "19 Oct 2026",
+        month: "10",
+        organizer: "P@SHA & Ministry of IT & Telecom",
+        fee: "Paid",
+        feeDetails: "Early-bird delegate pass required",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-15",
+        eligibility: "Tech executives, founders, policymakers, investors",
+        prizePool: "TBA / Not announced",
+        url: "https://pasha.hostinger.bitscollision.net/events",
+        description: "High-level summit bringing together tech giants, venture funds, IT export leaders, and national stakeholders to chart Pakistan's tech economic roadmap."
+      },
+      {
+        id: "cyber-hackathon-quetta",
+        name: "Digital Pakistan Cybersecurity Hackathon — Quetta",
+        category: "Cybersecurity",
+        type: "In-Person",
+        city: "Quetta",
+        province: "Balochistan",
+        venue: "BUITEMS Quetta",
+        startDate: "2026-10-25",
+        endDate: "2026-10-26",
+        dateDisplay: "25–26 Oct 2026",
+        month: "10",
+        organizer: "Ignite National Technology Fund & MoITT",
+        fee: "Free",
+        feeDetails: "Free entry for shortlisted CTF participants",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-18",
+        eligibility: "Pakistani cybersecurity students, ethical hackers, and CTF enthusiasts",
+        prizePool: "Cash prizes for regional champions & qualification for National Grand Finale",
+        url: null,
+        description: "Regional round of the nationwide cybersecurity competition testing capture-the-flag (CTF) challenges, network defense, web exploits, forensics, and cryptography in Balochistan."
+      },
+      {
+        id: "cyber-safe-pakistan-2026",
+        name: "Cyber Safe Pakistan 2026",
+        category: "Cybersecurity",
+        type: "In-Person",
+        city: "Karachi",
+        province: "Sindh",
+        venue: "Mövenpick Hotel Karachi",
+        startDate: "2026-10-27",
+        endDate: "2026-10-28",
+        dateDisplay: "27–28 Oct 2026",
+        month: "10",
+        organizer: "Cyber Security Association of Pakistan (CSAP)",
+        fee: "Paid",
+        feeDetails: "Conference pass with CPE credits",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-22",
+        eligibility: "CISOs, security architects, ethical hackers, defense personnel, and students",
+        prizePool: "TBA / Not announced",
+        url: "https://www.cybersafepakistan.com/",
+        description: "National cybersecurity congress tackling critical infrastructure security, enterprise defense, zero-trust architectures, and cyber threat intelligence."
+      },
+      {
+        id: "cyber-hackathon-lahore",
+        name: "Digital Pakistan Cybersecurity Hackathon — Lahore",
+        category: "Cybersecurity",
+        type: "In-Person",
+        city: "Lahore",
+        province: "Punjab",
+        venue: "University of the Punjab / ITU Lahore",
+        startDate: "2026-10-31",
+        endDate: "2026-11-01",
+        dateDisplay: "31 Oct – 1 Nov 2026",
+        month: "10",
+        organizer: "Ignite National Technology Fund",
+        fee: "Free",
+        feeDetails: "Free registration upon clearance of qualification round",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-20",
+        eligibility: "Pakistani ethical hackers and students aged 18–35",
+        prizePool: "Cash awards and grand finale spots",
+        url: null,
+        description: "Punjab regional qualifier for Digital Pakistan Cyber Hackathon with hands-on red teaming, reverse engineering, mobile malware dissection, and defense."
+      },
+      {
+        id: "cyber-hackathon-multan",
+        name: "Digital Pakistan Cybersecurity Hackathon — Multan",
+        category: "Cybersecurity",
+        type: "In-Person",
+        city: "Multan",
+        province: "Punjab",
+        venue: "Bahauddin Zakariya University (BZU)",
+        startDate: "2026-11-04",
+        endDate: "2026-11-05",
+        dateDisplay: "4–5 Nov 2026",
+        month: "11",
+        organizer: "Ignite National Technology Fund",
+        fee: "Free",
+        feeDetails: "Free entry for qualified teams",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-24",
+        eligibility: "Students and professionals across South Punjab",
+        prizePool: "Regional championship prize money",
+        url: null,
+        description: "South Punjab chapter of the national cybersecurity battleground designed to empower regional cybersecurity talent in offensive and defensive CTF domains."
+      },
+      {
+        id: "cyber-hackathon-peshawar",
+        name: "Digital Pakistan Cybersecurity Hackathon — Peshawar",
+        category: "Cybersecurity",
+        type: "In-Person",
+        city: "Peshawar",
+        province: "Khyber Pakhtunkhwa",
+        venue: "University of Engineering & Technology (UET) Peshawar",
+        startDate: "2026-11-09",
+        endDate: "2026-11-10",
+        dateDisplay: "9–10 Nov 2026",
+        month: "11",
+        organizer: "Ignite & KP IT Board",
+        fee: "Free",
+        feeDetails: "Free for eligible students and CTF teams",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-29",
+        eligibility: "KPK tech students, researchers, and cybersecurity hobbyists",
+        prizePool: "Cash prizes and national grand finale entry",
+        url: null,
+        description: "Khyber Pakhtunkhwa regional qualification hackathon testing threat hunting, cryptographic puzzle solving, and web application vulnerability assessment."
+      },
+      {
+        id: "technoverse-5",
+        name: "Technoverse 5.0",
+        category: "Student Convention",
+        type: "In-Person",
+        city: "Lahore",
+        province: "Punjab",
+        venue: "COMSATS University Islamabad, Lahore Campus",
+        startDate: "2026-11-14",
+        endDate: "2026-11-15",
+        dateDisplay: "14–15 Nov 2026",
+        month: "11",
+        organizer: "COMSATS Lahore Computer Science Society",
+        fee: "Paid",
+        feeDetails: "Module-specific registration fee",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-11-08",
+        eligibility: "University undergraduates and software teams across Pakistan",
+        prizePool: "Certificates, trophies, and cash pool",
+        url: "https://technoverse.cuilahore.edu.pk/",
+        description: "Dynamic annual technology extravaganza featuring competitive speed programming, frontend/backend web development challenges, UX design, and esports."
+      },
+      {
+        id: "cyber-hackathon-islamabad",
+        name: "Digital Pakistan Cybersecurity Hackathon — Islamabad",
+        category: "Cybersecurity",
+        type: "In-Person",
+        city: "Islamabad",
+        province: "Islamabad Capital Territory",
+        venue: "Islamabad Tech Center / Air University",
+        startDate: "2026-11-14",
+        endDate: "2026-11-15",
+        dateDisplay: "14–15 Nov 2026",
+        month: "11",
+        organizer: "Ignite National Technology Fund & MoITT",
+        fee: "Free",
+        feeDetails: "Free registration upon clearing screening test",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-11-05",
+        eligibility: "Open to registered cybersecurity teams across Islamabad & Rawalpindi",
+        prizePool: "Regional cash pool + Grand Finale qualification",
+        url: "https://cyberhackathon.pk/schedule/hackathon",
+        description: "The capital regional round of the Digital Pakistan Cybersecurity Hackathon featuring top-tier penetration testers, threat analysts, and system security specialists."
+      },
+      {
+        id: "icet-2026",
+        name: "ICET 2026",
+        category: "Computing & Research",
+        type: "In-Person",
+        city: "Topi",
+        province: "Khyber Pakhtunkhwa",
+        venue: "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI)",
+        startDate: "2026-11-18",
+        endDate: "2026-11-19",
+        dateDisplay: "18–19 Nov 2026",
+        month: "11",
+        organizer: "GIK Institute & IEEE Pakistan Section",
+        fee: "Paid",
+        feeDetails: "Author and attendee registration tiers as per IEEE standards",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-10-30",
+        eligibility: "Academics, postgraduate scholars, researchers, and computer scientists",
+        prizePool: "Best Paper Awards & IEEE Xplore indexing",
+        url: "https://www.icet.org.pk/2026/",
+        description: "20th International Conference on Emerging Technologies (ICET), providing a global forum for cutting-edge computing research, robotics, AI, distributed systems, and communications."
+      },
+      {
+        id: "devopsdays-islamabad-2026",
+        name: "DevOps Days Islamabad 2026",
+        category: "DevOps / Cloud",
+        type: "In-Person",
+        city: "Islamabad",
+        province: "Islamabad Capital Territory",
+        venue: "Pak-China Friendship Centre, Islamabad",
+        startDate: "2026-11-21",
+        endDate: "2026-11-21",
+        dateDisplay: "21 Nov 2026",
+        month: "11",
+        organizer: "DevOps Community Pakistan",
+        fee: "Paid",
+        feeDetails: "Community ticket (student discounts available)",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-11-15",
+        eligibility: "DevOps engineers, SREs, cloud architects, developers, and tech leads",
+        prizePool: "TBA / Not announced",
+        url: "https://www.devopsdays.pk/",
+        description: "Part of the worldwide series of technical conferences covering modern software development, IT infrastructure operations, CI/CD, Kubernetes, and developer culture."
+      },
+      {
+        id: "fit-2026",
+        name: "FIT 2026",
+        category: "Computing & Research",
+        type: "In-Person",
+        city: "Islamabad",
+        province: "Islamabad Capital Territory",
+        venue: "COMSATS University Islamabad, Park Road Campus",
+        startDate: "2026-12-14",
+        endDate: "2026-12-15",
+        dateDisplay: "14–15 Dec 2026",
+        month: "12",
+        organizer: "COMSATS University Islamabad & IEEE",
+        fee: "Paid",
+        feeDetails: "Author registration and general audience delegate passes",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-11-20",
+        eligibility: "Researchers, PhD fellows, computer engineers, and tech students",
+        prizePool: "Best Research Paper Shield & IEEE publication",
+        url: "https://fit.edu.pk/",
+        description: "22nd International Conference on Frontiers of Information Technology (FIT) focusing on Artificial Intelligence, Software Engineering, Cybersecurity, Data Science, and Smart Systems."
+      },
+      {
+        id: "code-vs-visual-finale",
+        name: "Code vs Visual Grand Finale",
+        category: "App & Web Development",
+        type: "In-Person",
+        city: "Lahore",
+        province: "Punjab",
+        venue: "Arfa Software Technology Park, Lahore",
+        startDate: "2026-12-19",
+        endDate: "2026-12-19",
+        dateDisplay: "19 Dec 2026",
+        month: "12",
+        organizer: "Punjab Information Technology Board (PITB) & Tech Community",
+        fee: "Free",
+        feeDetails: "Free admission for shortlisted developers and designers",
+        registrationStatus: "Open",
+        registrationDeadline: "2026-12-05",
+        eligibility: "Full-stack developers, UI/UX designers, and cross-functional teams",
+        prizePool: "PKR 300,000 in cash awards + Incubation fast-track",
+        url: null,
+        description: "An intense 24-hour showdown pitting software engineers and visual designers against each other to build complete, production-ready web and mobile products in real time."
+      }
+    ];
+
+    /**
+     * Category Tracks (matches left-side list in screenshot)
+     */
+    const CATEGORY_TRACKS = [
+      {
+        id: "all",
+        code: "01",
+        name: "All Events",
+        title: "All Tech Events",
+        subtitle: "Start here. Comprehensive verified directory of hackathons, developer conferences, student competitions, and tech opportunities across Pakistan.",
+        categories: null
+      },
+      {
+        id: "hackathons",
+        code: "02",
+        name: "Hackathons & Coding",
+        title: "Hackathons & Competitions",
+        subtitle: "Fast-paced build sprints, CTFs, coding challenges, and prize competitions hosted across Pakistan's premier software universities and tech parks.",
+        categories: ["Hackathon", "App & Web Development"]
+      },
+      {
+        id: "ai",
+        code: "03",
+        name: "AI & Machine Learning",
+        title: "AI, Machine Learning & Data",
+        subtitle: "National AI conferences, generative AI hackathons, machine learning summits, and computer vision symposiums.",
+        categories: ["AI / Machine Learning"]
+      },
+      {
+        id: "cybersecurity",
+        code: "04",
+        name: "Cybersecurity & CTFs",
+        title: "Cybersecurity & National CTFs",
+        subtitle: "Digital Pakistan nationwide cybersecurity hackathons, cyber drills, CSAP summits, and information security competitions.",
+        categories: ["Cybersecurity"]
+      },
+      {
+        id: "expos",
+        code: "05",
+        name: "Tech Expos & Summits",
+        title: "Technology Expos & Summits",
+        subtitle: "Large-scale industry trade shows, enterprise B2B tech exhibitions, and digital transformation forums.",
+        categories: ["Technology Expo"]
+      },
+      {
+        id: "opensource",
+        code: "06",
+        name: "Open Source & DevOps",
+        title: "Open Source & Cloud Native",
+        subtitle: "Hacktoberfest sprints, Kubernetes Community Days, Linux user groups, and developer ecosystem meetups.",
+        categories: ["Open Source", "DevOps / Cloud"]
+      },
+      {
+        id: "students",
+        code: "07",
+        name: "Student Conventions",
+        title: "Student Conventions & Fests",
+        subtitle: "All-Pakistan university software conventions, coding Olympiads, and student engineering expos like NaSCon.",
+        categories: ["Student Convention"]
+      },
+      {
+        id: "research",
+        code: "08",
+        name: "Computing & Research",
+        title: "Computing & IEEE Research",
+        subtitle: "Peer-reviewed research conferences, academic symposiums, and engineering paper presentations across IEEE sections.",
+        categories: ["Computing & Research"]
+      },
+      {
+        id: "startups",
+        code: "09",
+        name: "Startup & Networking",
+        title: "Startup Hubs & Networking",
+        subtitle: "P@SHA tech summits, founder-investor venture demo days, and ecosystem acceleration networking mixers.",
+        categories: ["Startup / Networking"]
+      },
+      {
+        id: "awards",
+        code: "10",
+        name: "Technology Awards",
+        title: "Technology & Software Awards",
+        subtitle: "National excellence galas honoring Pakistan's standout software products, tech startups, and digital innovators.",
+        categories: ["Technology Awards"]
+      }
+    ];
+
+    /**
+     * State Management
+     */
+    let allEvents = [...events];
+    let filteredEvents = [...events];
+    let activeEvent = null;
+    let currentTrackIndex = 0;
+
+    // Simulated/Reference "Today" for consistent 2026 date context
+    const REFERENCE_TODAY = new Date("2026-09-24T00:00:00");
+
+    /**
+     * Compute event timeline status and days remaining
+     */
+    function getEventStatus(event) {
+      const start = new Date(event.startDate + "T00:00:00");
+      const end = new Date((event.endDate || event.startDate) + "T23:59:59");
+      const now = REFERENCE_TODAY;
+
+      if (now > end) {
+        return {
+          status: "completed",
+          label: "Completed",
+          badgeClass: "status-completed",
+          daysText: "Concluded"
+        };
+      } else if (now >= start && now <= end) {
+        return {
+          status: "ongoing",
+          label: "🟢 Happening Today",
+          badgeClass: "status-ongoing",
+          daysText: "Live Now"
+        };
+      } else {
+        const diffMs = start.getTime() - now.getTime();
+        const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+        const daysText = diffDays === 1 ? "Tomorrow" : `In ${diffDays} days`;
+        return {
+          status: "upcoming",
+          label: daysText,
+          badgeClass: "status-upcoming",
+          daysText: daysText
+        };
+      }
+    }
+
+    /**
+     * Get event count for a specific track
+     */
+    function getTrackCount(track) {
+      if (!track.categories) return allEvents.length;
+      return allEvents.filter(e => track.categories.includes(e.category)).length;
+    }
+
+    /**
+     * Render Left-Side Category List (matches the screenshot)
+     */
+    function renderSidebarList() {
+      const listContainer = document.getElementById("sidebarNavList");
+      if (!listContainer) return;
+      listContainer.innerHTML = "";
+
+      CATEGORY_TRACKS.forEach((track, idx) => {
+        const count = getTrackCount(track);
+        const itemBtn = document.createElement("button");
+        itemBtn.className = `sidebar-item ${idx === currentTrackIndex ? 'active' : ''}`;
+        itemBtn.setAttribute("type", "button");
+        itemBtn.setAttribute("data-track-index", idx);
+        
+        itemBtn.innerHTML = `
+          <div class="sidebar-item-left">
+            <span class="sidebar-item-num">${track.code}</span>
+            <span class="sidebar-item-name">${track.name}</span>
+          </div>
+          <span class="sidebar-item-count">${count}</span>
+        `;
+
+        itemBtn.addEventListener("click", () => {
+          selectCategoryTrack(idx);
+        });
+
+        listContainer.appendChild(itemBtn);
+      });
+
+      // Populate mobile category select (instant one-tap category selection, no slider)
+      const mobileSelect = document.getElementById("mobileCategorySelect");
+      if (mobileSelect) {
+        mobileSelect.innerHTML = "";
+        CATEGORY_TRACKS.forEach((track, idx) => {
+          const count = getTrackCount(track);
+          const opt = document.createElement("option");
+          opt.value = idx;
+          opt.textContent = `${track.code}. ${track.name} (${count})`;
+          mobileSelect.appendChild(opt);
+        });
+        mobileSelect.value = String(currentTrackIndex);
+      }
+
+      // Update total count badge
+      const totalBadge = document.getElementById("sidebarTotalEventsBadge");
+      if (totalBadge) totalBadge.textContent = allEvents.length;
+    }
+
+    /**
+     * Select Track
+     */
+    function selectCategoryTrack(idx) {
+      currentTrackIndex = idx;
+      const track = CATEGORY_TRACKS[idx];
+
+      // Update active state in sidebar list
+      const items = document.querySelectorAll(".sidebar-item");
+      items.forEach((el, i) => {
+        if (i === idx) el.classList.add("active");
+        else el.classList.remove("active");
+      });
+
+      // Keep mobile select in sync
+      const mobileSelect = document.getElementById("mobileCategorySelect");
+      if (mobileSelect && mobileSelect.value !== String(idx)) {
+        mobileSelect.value = String(idx);
+      }
+
+      // Update Stage Header
+      const totalTracks = String(CATEGORY_TRACKS.length).padStart(2, "0");
+      const currentCode = track.code;
+      const indexStr = `${currentCode} / ${totalTracks}`;
+
+      const counterEl = document.getElementById("stageCounterText");
+      if (counterEl) counterEl.textContent = indexStr;
+
+      const headlineEl = document.getElementById("stageHeadlineText");
+      if (headlineEl) headlineEl.textContent = track.title;
+
+      const descEl = document.getElementById("stageDescriptionText");
+      if (descEl) descEl.textContent = track.subtitle;
+
+      // Update Footer Progress Bar
+      const progressPercent = ((idx + 1) / CATEGORY_TRACKS.length) * 100;
+      const progressFill = document.getElementById("stageProgressBar");
+      if (progressFill) progressFill.style.width = `${progressPercent}%`;
+
+      const footerIndex = document.getElementById("stageFooterIndex");
+      if (footerIndex) footerIndex.textContent = indexStr;
+
+      // Re-apply filters for this track
+      applyFiltersAndSort();
+    }
+
+    /**
+     * Render Explore by City Section
+     */
+    function renderCitiesSection() {
+      const cityContainer = document.getElementById("cityGrid");
+      if (!cityContainer) return;
+      cityContainer.innerHTML = "";
+
+      const cityMeta = [
+        { name: "Karachi", province: "Sindh" },
+        { name: "Lahore", province: "Punjab" },
+        { name: "Islamabad", province: "ICT" },
+        { name: "Peshawar", province: "Khyber Pakhtunkhwa" },
+        { name: "Quetta", province: "Balochistan" },
+        { name: "Multan", province: "Punjab" },
+        { name: "Topi", province: "Khyber Pakhtunkhwa" }
+      ];
+
+      cityMeta.forEach(c => {
+        const count = allEvents.filter(e => e.city.toLowerCase() === c.name.toLowerCase()).length;
+        const card = document.createElement("div");
+        card.className = "city-card";
+        card.innerHTML = `
+          <div>
+            <div class="city-name">${c.name}</div>
+            <div class="city-province">${c.province}</div>
+          </div>
+          <div class="city-count">${count} ${count === 1 ? 'event' : 'events'}</div>
+        `;
+        card.addEventListener("click", () => {
+          document.getElementById("cityFilter").value = c.name;
+          selectCategoryTrack(0); // View in All Events
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        cityContainer.appendChild(card);
+      });
+    }
+
+    /**
+     * Render Event Cards Grid
+     */
+    function renderEvents(eventsToRender) {
+      const grid = document.getElementById("eventsGrid");
+      if (!grid) return;
+      grid.innerHTML = "";
+
+      const bigCountEl = document.getElementById("stageBigCount");
+      if (bigCountEl) bigCountEl.textContent = eventsToRender.length;
+
+      if (eventsToRender.length === 0) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3>No matching tech events found</h3>
+            <p>Try clearing your search query or selecting another category from the list on the left.</p>
+            <button class="btn btn-secondary btn-sm" onclick="resetAllFilters()">Reset Filters</button>
+          </div>
+        `;
+        return;
+      }
+
+      eventsToRender.forEach(evt => {
+        const statusInfo = getEventStatus(evt);
+        const card = document.createElement("article");
+        card.className = "event-card";
+        card.id = `card-${evt.id}`;
+
+        // Fee class
+        let feeClass = "pill-tba";
+        if (evt.fee === "Free") feeClass = "pill-free";
+        else if (evt.fee === "Paid") feeClass = "pill-paid";
+
+        // Registration class
+        let regClass = "pill-reg-open";
+        if (evt.registrationStatus === "Closed") regClass = "pill-reg-closed";
+        else if (evt.registrationStatus === "Closing Soon") regClass = "pill-reg-closing";
+
+        // Official link markup
+        let officialLinkMarkup = "";
+        if (evt.url) {
+          officialLinkMarkup = `
+            <a href="${evt.url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              <span>Website ↗</span>
+            </a>
+          `;
+        } else {
+          officialLinkMarkup = `
+            <button class="btn btn-secondary btn-sm btn-disabled" title="Official link not available">
+              <span>Link TBA</span>
+            </button>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="card-top-row">
+            <span class="card-category-badge">${evt.category}</span>
+            <span class="card-status-badge ${statusInfo.badgeClass}">${statusInfo.label}</span>
+          </div>
+
+          <h3 class="card-title" onclick="openEventDetails('${evt.id}')" style="cursor: pointer;" title="Click to view details for ${evt.name}">${evt.name}</h3>
+          <p class="card-desc">${evt.description}</p>
+
+          <div class="card-meta-list">
+            <div class="meta-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>${evt.dateDisplay}</span>
+            </div>
+            <div class="meta-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span><span class="meta-highlight">${evt.city}</span> &bull; ${evt.venue || evt.province}</span>
+            </div>
+          </div>
+
+          <div class="card-pill-row">
+            <span class="pill ${feeClass}">Fee: ${evt.fee || 'TBA'}</span>
+            <span class="pill ${regClass}">Reg: ${evt.registrationStatus || 'Open'}</span>
+            <span class="pill pill-tba">${evt.type || 'In-Person'}</span>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-details btn-sm" onclick="openEventDetails('${evt.id}')">
+              <span>View Details</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            ${officialLinkMarkup}
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+
+    /**
+     * Filter & Sort Engine
+     */
+    function applyFiltersAndSort() {
+      const searchVal = document.getElementById("searchInput").value.trim().toLowerCase();
+      const cityVal = document.getElementById("cityFilter").value;
+      const typeVal = document.getElementById("typeFilter").value;
+      const feeVal = document.getElementById("feeFilter").value;
+      const sortVal = document.getElementById("sortSelect").value;
+
+      // Toggle search clear button
+      const clearSearchBtn = document.getElementById("searchClearBtn");
+      if (clearSearchBtn) {
+        clearSearchBtn.style.display = searchVal ? "block" : "none";
+      }
+
+      const activeTrack = CATEGORY_TRACKS[currentTrackIndex];
+
+      filteredEvents = allEvents.filter(evt => {
+        // Track Category Filter
+        if (activeTrack.categories && !activeTrack.categories.includes(evt.category)) {
+          return false;
+        }
+
+        // Search
+        if (searchVal) {
+          const matchTarget = `${evt.name} ${evt.description} ${evt.city} ${evt.province} ${evt.venue || ''} ${evt.organizer || ''} ${evt.category}`.toLowerCase();
+          if (!matchTarget.includes(searchVal)) return false;
+        }
+
+        // City
+        if (cityVal !== "all" && evt.city.toLowerCase() !== cityVal.toLowerCase()) return false;
+
+        // Type
+        if (typeVal !== "all" && evt.type !== typeVal) return false;
+
+        // Fee
+        if (feeVal !== "all" && evt.fee !== feeVal) return false;
+
+        return true;
+      });
+
+      // Sorting
+      filteredEvents.sort((a, b) => {
+        if (sortVal === "soonest") {
+          return new Date(a.startDate).getTime() - new Date(b.startDate).getTime();
+        } else if (sortVal === "latest") {
+          return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
+        } else if (sortVal === "alphabetical") {
+          return a.name.localeCompare(b.name);
+        }
+        return 0;
+      });
+
+      renderEvents(filteredEvents);
+      renderActiveChips();
+    }
+
+    /**
+     * Render Active Filter Chips
+     */
+    function renderActiveChips() {
+      const container = document.getElementById("activeChipsContainer");
+      if (!container) return;
+      container.innerHTML = "";
+
+      const activeList = [];
+
+      const searchVal = document.getElementById("searchInput").value.trim();
+      if (searchVal) {
+        activeList.push({ key: "search", label: `"${searchVal}"`, reset: () => { document.getElementById("searchInput").value = ""; } });
+      }
+
+      const cityVal = document.getElementById("cityFilter").value;
+      if (cityVal !== "all") {
+        activeList.push({ key: "city", label: cityVal, reset: () => { document.getElementById("cityFilter").value = "all"; } });
+      }
+
+      const typeVal = document.getElementById("typeFilter").value;
+      if (typeVal !== "all") {
+        activeList.push({ key: "type", label: typeVal, reset: () => { document.getElementById("typeFilter").value = "all"; } });
+      }
+
+      const feeVal = document.getElementById("feeFilter").value;
+      if (feeVal !== "all") {
+        activeList.push({ key: "fee", label: feeVal, reset: () => { document.getElementById("feeFilter").value = "all"; } });
+      }
+
+      if (activeList.length > 0) {
+        activeList.forEach(item => {
+          const chip = document.createElement("span");
+          chip.className = "filter-chip";
+          chip.innerHTML = `
+            <span>${item.label}</span>
+            <span class="filter-chip-remove" aria-label="Remove filter">✕</span>
+          `;
+          chip.querySelector(".filter-chip-remove").addEventListener("click", () => {
+            item.reset();
+            applyFiltersAndSort();
+          });
+          container.appendChild(chip);
+        });
+      }
+    }
+
+    /**
+     * Reset All Filters
+     */
+    function resetAllFilters() {
+      document.getElementById("searchInput").value = "";
+      document.getElementById("cityFilter").value = "all";
+      document.getElementById("typeFilter").value = "all";
+      document.getElementById("feeFilter").value = "all";
+      document.getElementById("sortSelect").value = "soonest";
+      applyFiltersAndSort();
+    }
+
+    /**
+     * Event Details Modal
+     */
+    function openEventDetails(eventId) {
+      const evt = allEvents.find(e => e.id === eventId);
+      if (!evt) return;
+      activeEvent = evt;
+
+      const modalBackdrop = document.getElementById("eventModalBackdrop");
+      const statusInfo = getEventStatus(evt);
+
+      document.getElementById("modalCategory").textContent = evt.category;
+      document.getElementById("modalTitle").textContent = evt.name;
+      document.getElementById("modalDesc").textContent = evt.description;
+
+      document.getElementById("modalOrganizer").textContent = evt.organizer || "TBA / Not announced";
+      document.getElementById("modalDates").textContent = evt.dateDisplay || "TBA / Not announced";
+      document.getElementById("modalVenue").textContent = evt.venue || "TBA / Not announced";
+      document.getElementById("modalCityProvince").textContent = `${evt.city || 'TBA'}, ${evt.province || 'Pakistan'}`;
+      document.getElementById("modalDeadline").textContent = evt.registrationDeadline || "TBA / Not announced";
+      document.getElementById("modalEligibility").textContent = evt.eligibility || "TBA / Not announced";
+      document.getElementById("modalFee").textContent = evt.feeDetails || evt.fee || "TBA / Not announced";
+      document.getElementById("modalPrize").textContent = evt.prizePool || "TBA / Not announced";
+
+      // Status banner
+      const banner = document.getElementById("modalStatusBanner");
+      banner.className = "";
+      if (statusInfo.status === "ongoing") {
+        banner.style.background = "rgba(59, 130, 246, 0.15)";
+        banner.style.color = "#60a5fa";
+        banner.style.border = "1px solid rgba(59, 130, 246, 0.3)";
+        banner.textContent = `📍 This event is ongoing today (${evt.dateDisplay})!`;
+      } else if (statusInfo.status === "upcoming") {
+        banner.style.background = "rgba(16, 185, 129, 0.15)";
+        banner.style.color = "#34d399";
+        banner.style.border = "1px solid rgba(16, 185, 129, 0.3)";
+        banner.textContent = `⏳ Scheduled to start in: ${statusInfo.daysText} (${evt.dateDisplay})`;
+      } else {
+        banner.style.background = "rgba(107, 114, 128, 0.18)";
+        banner.style.color = "#9ca3af";
+        banner.style.border = "1px solid rgba(107, 114, 128, 0.25)";
+        banner.textContent = `🏁 This event concluded on ${evt.dateDisplay}.`;
+      }
+
+      // Official Link
+      const officialLink = document.getElementById("modalOfficialLink");
+      if (evt.url) {
+        officialLink.href = evt.url;
+        officialLink.classList.remove("btn-disabled");
+        officialLink.innerHTML = `<span>Official Website ↗</span>`;
+      } else {
+        officialLink.href = "#";
+        officialLink.classList.add("btn-disabled");
+        officialLink.innerHTML = `<span>Official link not available</span>`;
+      }
+
+      modalBackdrop.classList.add("active");
+      document.body.style.overflow = "hidden";
+
+      // Update URL hash
+      window.location.hash = `event=${evt.id}`;
+    }
+
+    function closeEventDetails() {
+      const modalBackdrop = document.getElementById("eventModalBackdrop");
+      modalBackdrop.classList.remove("active");
+      document.body.style.overflow = "";
+      activeEvent = null;
+      if (window.location.hash.startsWith("#event=")) {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    /**
+     * Generate .ics Calendar File
+     */
+    function downloadCalendarICS(evt) {
+      if (!evt) return;
+      const cleanDate = (dStr) => dStr.replace(/-/g, "");
+      const start = cleanDate(evt.startDate);
+      const end = cleanDate(evt.endDate || evt.startDate);
+
+      const icsData = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Pakistan Tech Events 2026//EN",
+        "BEGIN:VEVENT",
+        `UID:${evt.id}-2026@pakistantechevents`,
+        `DTSTAMP:${cleanDate(new Date().toISOString().slice(0, 10))}T000000Z`,
+        `DTSTART;VALUE=DATE:${start}`,
+        `DTEND;VALUE=DATE:${end}`,
+        `SUMMARY:${evt.name}`,
+        `DESCRIPTION:${(evt.description || '').replace(/\n/g, ' ')}`,
+        `LOCATION:${evt.venue ? evt.venue + ', ' : ''}${evt.city}, Pakistan`,
+        evt.url ? `URL:${evt.url}` : "",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].filter(Boolean).join("\r\n");
+
+      const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `${evt.id}.ics`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast("Calendar event (.ics) downloaded!");
+    }
+
+    /**
+     * Toast System
+     */
+    function showToast(message) {
+      const container = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = "toast";
+      toast.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+      setTimeout(() => toast.classList.add("show"), 10);
+      setTimeout(() => {
+        toast.classList.remove("show");
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    /**
+     * Initial Setup & Event Listeners
+     */
+    document.addEventListener("DOMContentLoaded", () => {
+      // Initialize view
+      renderSidebarList();
+      selectCategoryTrack(0);
+      renderCitiesSection();
+
+      // Check URL anchor for direct event view
+      const hash = window.location.hash;
+      if (hash.startsWith("#event=")) {
+        const eventId = hash.replace("#event=", "");
+        openEventDetails(eventId);
+      }
+
+      // Topbar buttons
+      document.getElementById("btnIntro").addEventListener("click", () => {
+        selectCategoryTrack(0);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      document.getElementById("btnPrevCategory").addEventListener("click", () => {
+        const prevIdx = (currentTrackIndex - 1 + CATEGORY_TRACKS.length) % CATEGORY_TRACKS.length;
+        selectCategoryTrack(prevIdx);
+      });
+
+      document.getElementById("btnNextCategory").addEventListener("click", () => {
+        const nextIdx = (currentTrackIndex + 1) % CATEGORY_TRACKS.length;
+        selectCategoryTrack(nextIdx);
+      });
+
+      // Full Screen toggle
+      document.getElementById("btnFullScreen").addEventListener("click", () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else {
+          document.exitFullscreen().catch(() => {});
+        }
+      });
+
+      // Mobile Category Select
+      document.getElementById("mobileCategorySelect")?.addEventListener("change", (e) => {
+        selectCategoryTrack(parseInt(e.target.value, 10));
+      });
+
+      // Search & Filters inputs
+      document.getElementById("searchInput").addEventListener("input", applyFiltersAndSort);
+      document.getElementById("searchClearBtn").addEventListener("click", () => {
+        document.getElementById("searchInput").value = "";
+        applyFiltersAndSort();
+      });
+
+      document.getElementById("cityFilter").addEventListener("change", applyFiltersAndSort);
+      document.getElementById("typeFilter").addEventListener("change", applyFiltersAndSort);
+      document.getElementById("feeFilter").addEventListener("change", applyFiltersAndSort);
+      document.getElementById("sortSelect").addEventListener("change", applyFiltersAndSort);
+
+      // Modal triggers
+      document.getElementById("closeEventModalBtn").addEventListener("click", closeEventDetails);
+
+      // Backdrop clicks
+      document.getElementById("eventModalBackdrop").addEventListener("click", (e) => {
+        if (e.target.id === "eventModalBackdrop") closeEventDetails();
+      });
+
+      // ESC key closes modals
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeEventDetails();
+        }
+      });
+
+      // Share button in Event Modal
+      document.getElementById("modalShareBtn").addEventListener("click", () => {
+        if (!activeEvent) return;
+        const shareUrl = `${window.location.origin}${window.location.pathname}#event=${activeEvent.id}`;
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(shareUrl).then(() => {
+            showToast("Event link copied to clipboard!");
+          }).catch(() => {
+            showToast(`Event link: ${shareUrl}`);
+          });
+        } else {
+          showToast(`Event link: ${shareUrl}`);
+        }
+      });
+
+      // Calendar button in Event Modal
+      document.getElementById("modalCalendarBtn").addEventListener("click", () => {
+        if (activeEvent) downloadCalendarICS(activeEvent);
+      });
+    });
+  </script>
+</body>
+</html>

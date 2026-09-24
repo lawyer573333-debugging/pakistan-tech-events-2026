@@ -1,0 +1,6 @@
+{
+  "name": "Pakistan Tech Events 2026",
+  "description": "Comprehensive directory for hackathons, developer conferences, competitions, and tech opportunities across Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
